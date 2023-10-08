@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/formNew.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>newform</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:5500/formNew.html">
+<fieldset>
+    <legend><b>Personal Details</b></legend>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" fdprocessedid="fnwu99"><br><br>
+    <label for="mname">Middle Name</label>
+    <input type="mname" id="mname" name="mname" fdprocessedid="ll5s89"><br><br>
+<label for="lname">Last Name</label>
+<input type="lname" id="lname" name="lname" fdprocessedid="ulo2sl"><br><br>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" fdprocessedid="eo5c0q"><br><br>
+<label for="dob">Date Of Birth</label>
+<input type="date" id="dob" name="dob"><br><br>
+</fieldset>
+
+<fieldset>
+    <legend><b>Educational Details</b></legend>
+<label for="dept">Department</label><br>
+<input type="radio" id="cs" name="dept">
+<label for="cs">CS</label>
+<input type="radio" id="eie" name="dept">
+<label for="eie">EIE</label>
+<input type="radio" id="civil" name="dept">
+<label for="civil">CIVIL</label>
+<input type="radio" id="mech" name="dept">
+<label for="mech">MECH</label><br><br>
+
+<label for="yog">Year Of Graduation</label>
+<input list="year" id="yog" name="yog" fdprocessedid="vvfi7u">
+<datalist id="year">
+    <option>2021</option>
+    <option>2022</option>
+    <option>2023</option>
+    <option>2024</option>
+</datalist><br><br>
+<label for="skills">Skills</label><br>
+<input type="radio" id="html" name="html">
+<label for="html">html</label>
+<input type="radio" id="java" name="java">
+<label for="java">JAVA</label>
+<input type="radio" id="sql" name="sql">
+<label for="sql">SQL</label><br><br>
+
+<input type="Submit" fdprocessedid="gz064">
+</fieldset>
+    </form>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
